@@ -32,6 +32,7 @@ app.post('/signup', register);
 app.post('/signin', login);
 
 app.get('/', (req, res) => {
+    console.log("Request received");
     res.send({message: "OK GET"});
 });
 
